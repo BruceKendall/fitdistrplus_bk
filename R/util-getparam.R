@@ -7,7 +7,8 @@
 computegetparam <- function(argdistname)
 {
   #see ?dgamma, pgamma, qgamma, dbeta
-  nonparaminR <- c("x", "p", "q", "n", "log", "log.p", "lower.tail", "ncp")
+  ### Add "y" to the following list [BK]
+  nonparaminR <- c("x", "p", "q", "n", "log", "log.p", "lower.tail", "ncp", "y")
   nonparaminActuar <- c("limit", "order", "t")
   nonparaminGamlssdist <- "fast"
   nonparamspecial <- c("...", "..1", "..2")

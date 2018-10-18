@@ -1,4 +1,4 @@
-Package: fitdistrplus
+Package: fitdistrplusbk
 Title: Help to Fit of a Parametric Distribution to Non-Censored or
         Censored Data
 Version: 1.0-11
@@ -13,7 +13,7 @@ Imports: stats
 Suggests: actuar, rgenoud, mc2d, gamlss.dist, knitr, knitcitations,
         ggplot2, GeneralizedHyperbolic
 VignetteBuilder: knitr
-BuildVignettes: true
+BuildVignettes: false
 License: GPL (>= 2)
 Encoding: UTF-8
 URL: MailingList: http://listes.univ-lyon1.fr/wws/info/fitdist-users;
@@ -28,10 +28,4 @@ Author: Marie-Laure Delignette-Muller [aut],
   Jean-Baptiste Denis [ctb],
   Aurelie Siberchicot [aut, cre]
 Maintainer: Aurelie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
-Repository: CRAN
-Repository/R-Forge/Project: riskassessment
-Repository/R-Forge/Revision: 592
-Repository/R-Forge/DateTimeStamp: 2018-09-10 08:46:15
-Date/Publication: 2018-09-10 15:10:12 UTC
-NeedsCompilation: no
-Packaged: 2018-09-10 09:11:31 UTC; rforge
+
