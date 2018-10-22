@@ -58,7 +58,14 @@ fitdistcens <- function (censdata, distr, start=NULL, fix.arg=NULL,
     
     #check inconsistent parameters
     argddistname <- names(formals(ddistname))
-    arg_startfix <- checkparamlist(arg_startfix$start.arg, arg_startfix$fix.arg, argddistname)
+    
+    ## Following line is from the original
+#    arg_startfix <- checkparamlist(arg_startfix$start.arg, arg_startfix$fix.arg, argddistname)
+    
+    ## The next two lines are from fitdist(), added by BK
+    hasnodefaultval <- sapply(formals(ddistname), is.name)
+    arg_startfix <- checkparamlist(arg_startfix$start.arg, arg_startfix$fix.arg, 
+                                   argddistname, hasnodefaultval)
     #arg_startfix contains two names list (no longer NULL nor function)
     #store fix.arg.fun if supplied by the user
     if(is.function(fix.arg))
